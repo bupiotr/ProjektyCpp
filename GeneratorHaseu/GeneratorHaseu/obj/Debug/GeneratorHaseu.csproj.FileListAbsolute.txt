@@ -1,0 +1,9 @@
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\bin\Debug\GeneratorHaseu.exe.config
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\bin\Debug\GeneratorHaseu.exe
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\bin\Debug\GeneratorHaseu.pdb
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.csprojResolveAssemblyReference.cache
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.Form1.resources
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.Properties.Resources.resources
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.csproj.GenerateResource.Cache
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.exe
+c:\users\ares\documents\visual studio 2015\Projects\GeneratorHaseu\GeneratorHaseu\obj\Debug\GeneratorHaseu.pdb
