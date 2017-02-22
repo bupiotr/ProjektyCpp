@@ -35,7 +35,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -109,15 +108,6 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Made by Bika";
-            // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
@@ -133,9 +123,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 156);
+            this.ClientSize = new System.Drawing.Size(362, 139);
             this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -160,7 +149,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox4;
     }
 }

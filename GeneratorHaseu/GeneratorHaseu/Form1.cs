@@ -12,9 +12,9 @@ namespace GeneratorHaseu
 {
     public partial class Form1 : Form
     {
-        string[] litery = new string[25] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-        string[] literyDuze = new string[25] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-        string[] cyfry = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
+        string[] litery =       new string[25] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+        string[] literyDuze =   new string[25] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+        string[] cyfry =        new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
         char[] znakiSpecjalne = new char[15] { '!', '@', '#', '$', '%', '^', '&', '*', '(', '&', '/', '<', '>', '{', '}' };
 
         int iloscZnakow;
@@ -32,8 +32,7 @@ namespace GeneratorHaseu
             InitializeComponent();
         }
 
-        //przycisk generujacy
-        private void button1_Click(object sender, EventArgs e)
+        public void Generuj()
         {
             bool czyToLiczba = Int32.TryParse(textBox2.Text, out iloscZnakow);
             if (czyToLiczba)
@@ -41,39 +40,48 @@ namespace GeneratorHaseu
                 textBox1.Text = "";
                 iloscZnakowWTx = 0;
                 while (iloscZnakowWTx != iloscZnakow)
-                { 
-                        iloscZnakowWTx = textBox1.Text.Length;
+                {
+                    iloscZnakowWTx = textBox1.Text.Length;
+                    if (iloscZnakowWTx == iloscZnakow)
+                    {
+                        break;
+                    }
+                    cyfraLosowa = generatorLosowych.Next(0, cyfry.Length);
+                    literaLosowa = generatorLosowych.Next(0, litery.Length);
+                    dLiteraLosowa = generatorLosowych.Next(0, literyDuze.Length);
+                    znakLosowa = generatorLosowych.Next(0, znakiSpecjalne.Length);
 
-                        cyfraLosowa = generatorLosowych.Next(0, cyfry.Length);
-                        literaLosowa = generatorLosowych.Next(0, litery.Length);
-                        dLiteraLosowa = generatorLosowych.Next(0, literyDuze.Length);
-                        znakLosowa = generatorLosowych.Next(0, znakiSpecjalne.Length);
 
+                    Losowa = generatorLosowych.Next(0, 4);
 
-                        Losowa = generatorLosowych.Next(0, 3);
-
-                        if (Losowa == 0 && checkBox1.Checked) //cyfry
-                        {
-                            textBox1.Text += cyfry[cyfraLosowa];
-                        }
-                        if (Losowa == 1 && checkBox2.Checked) //litery
-                        {
-                            textBox1.Text += litery[literaLosowa];
-                        }
-                        if (Losowa == 2 && checkBox4.Checked) //duze litery
-                        {
-                            textBox1.Text += literyDuze[dLiteraLosowa];
-                        }
-                        if (Losowa == 3 && checkBox3.Checked) // znaki
-                        {
-                            textBox1.Text += znakiSpecjalne[znakLosowa];
-                        }
+                    if (Losowa == 0 && checkBox1.Checked) //cyfry
+                    {
+                        textBox1.Text += cyfry[cyfraLosowa];
+                    }
+                    if (Losowa == 1 && checkBox2.Checked) //litery
+                    {
+                        textBox1.Text += litery[literaLosowa];
+                    }
+                    if (Losowa == 2 && checkBox4.Checked) //duze litery
+                    {
+                        textBox1.Text += literyDuze[dLiteraLosowa];
+                    }
+                    if (Losowa == 3 && checkBox3.Checked) // znaki
+                    {
+                        textBox1.Text += znakiSpecjalne[znakLosowa];
+                    }
                 }
             }
             else
             {
                 MessageBox.Show(textBox2.Text + " to nie jest liczba");
             }
+        }
+
+        //przycisk generujacy
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Generuj();
         }
         //cyfry
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
