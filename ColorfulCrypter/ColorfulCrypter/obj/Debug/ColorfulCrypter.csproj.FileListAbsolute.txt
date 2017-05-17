@@ -1,0 +1,9 @@
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\bin\Debug\ColorfulCrypter.exe.config
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\bin\Debug\ColorfulCrypter.exe
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\bin\Debug\ColorfulCrypter.pdb
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.csprojResolveAssemblyReference.cache
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.Form1.resources
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.Properties.Resources.resources
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.csproj.GenerateResource.Cache
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.exe
+c:\users\ares\documents\visual studio 2015\Projects\ColorfulCrypter\ColorfulCrypter\obj\Debug\ColorfulCrypter.pdb
