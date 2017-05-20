@@ -1,4 +1,54 @@
-//***********************Mandelbrot************************
+private void button1_Click(object sender, EventArgs e)
+        {
+            int width = 400, height = 400, x = 0, zaduzo = 0;
+            int[] tablica = new int[400];
+            string doCryptu = richTextBox1.Text;
+            Bitmap mapa = new Bitmap(width, height);
+
+            string letterR = richTextBox1.Text;
+            string letterG = richTextBox2.Text;
+            string letterB = richTextBox3.Text;
+            int[] array1 = { letterR.Length, letterG.Length, letterB.Length };
+            int min = array1.Min();
+
+            if (min > width)
+            {
+                zaduzo = min - width;
+                MessageBox.Show($"Error twoj tekst jest za duzy o {zaduzo} znakow");
+            }
+            else
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    //foreach (char letter in doCryptu)
+                    for(int i=0;i<min;i++)
+                    {
+                        int convertedR = Convert.ToInt32(letterR[i]);
+                        int convertedG = Convert.ToInt32(letterG[i]);
+                        int convertedB = Convert.ToInt32(letterB[i]);
+                        mapa.SetPixel(x, y, Color.FromArgb(255, convertedR, convertedG, convertedB));
+                        x++;
+                    }
+                    x = 0;
+                }
+            }
+
+            pictureBox1.Image = mapa;
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image.Save("kappa.png");
+        }
+
+        //***********************Mandelbrot************************
 
         private void button3_Click(object sender, EventArgs e)
         {
