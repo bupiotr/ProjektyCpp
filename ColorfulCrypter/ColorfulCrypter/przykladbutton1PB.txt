@@ -1,23 +1,23 @@
-private void button1_Click(object sender, EventArgs e)
+ private void button1_Click(object sender, EventArgs e)
         {
             int width = 400, height = 400, x = 0, zaduzo = 0;
             int[] tablica = new int[400];
             string doCryptu = richTextBox1.Text;
             Bitmap mapa = new Bitmap(width, height);
 
-            if (richTextBox1.TextLength > width)
+            string letterR = richTextBox1.Text;
+            string letterG = richTextBox2.Text;
+            string letterB = richTextBox3.Text;
+            int[] array1 = { letterR.Length, letterG.Length, letterB.Length };
+            int min = array1.Min();
+
+            if (min > width)
             {
-                zaduzo = richTextBox1.TextLength - width;
+                zaduzo = min - width;
                 MessageBox.Show($"Error twoj tekst jest za duzy o {zaduzo} znakow");
             }
             else
             {
-                string letterR = richTextBox1.Text;
-                string letterG = richTextBox2.Text;
-                string letterB = richTextBox3.Text;
-                int[] array1 = { letterR.Length, letterG.Length, letterB.Length };
-                int min = array1.Min();
-
                 for (int y = 0; y < height; y++)
                 {
                     //foreach (char letter in doCryptu)
